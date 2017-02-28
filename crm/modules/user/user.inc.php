@@ -728,7 +728,7 @@ function command_login () {
  * @return The url to display when complete.
  */
 function command_logout () {
-
+    
     // Unset all of the session variables.
     $_SESSION = array();
     
@@ -744,7 +744,7 @@ function command_logout () {
     
     // Finally, destroy the session.
     session_destroy();
-
+    
     // Redirect to index
     return crm_url();
 }
@@ -753,7 +753,6 @@ function command_logout () {
  * Respond to reset password request.
 */
 function command_reset_password () {
-    global $db_connect;
     global $config_host;
     global $config_base_path;
     global $config_email_from;
@@ -903,7 +902,7 @@ function command_user_permissions_update () {
                 ";
                 $res = mysqli_query($db_connect, $sql);
                 if (!$res) { die(mysqli_error($res)); }
-                if (mysql_numrows($res) === 0) {
+                if (mysqli_num_rows($res) === 0) {
                     $sql = "
                         INSERT INTO `role_permission`
                         (`rid`, `permission`)
@@ -924,7 +923,6 @@ function command_user_permissions_update () {
             }
         }
     }
-    
     
     return crm_url('permissions');
 }
