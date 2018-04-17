@@ -40,7 +40,7 @@ $config_org_website = 'www.seltzercrm.org';
 // The currency code for dealing with payments, can be GBP, USD, or EUR
 $config_currency_code = 'USD';
 
-// The From: address to use when sending email to members
+// The From: address to use when sending email to users
 $config_email_from = '';
 
 // The email address to notify when a user is created
