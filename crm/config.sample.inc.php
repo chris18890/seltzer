@@ -120,12 +120,16 @@ $config_modules[] = "profile_picture";
 // Email list management
 //$config_modules[] = "email_list";
 
+// Track Tool Inventory
+//$config_modules[] = "tool";
+
 // Links to show in the main menu
 $config_links = array(
     '<front>' => 'Home'
     , 'members' => 'Members'
     , 'plans' => 'Plans'
     , 'keys' => 'Keys'
+    , 'tools' => 'Tools'
     , 'user_metas' => 'User Meta Data'
     , 'plan_metas' => 'Plan Meta Data'
     , 'payments' => 'Payments'
