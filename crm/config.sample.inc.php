@@ -123,12 +123,16 @@ $config_modules[] = "profile_picture";
 // Track Tool Inventory
 //$config_modules[] = "tool";
 
+// Track Member Training
+//$config_modules[] = "training";
+
 // Links to show in the main menu
 $config_links = array(
     '<front>' => 'Home'
     , 'members' => 'Members'
     , 'plans' => 'Plans'
     , 'keys' => 'Keys'
+    , 'trainings' => 'Training'
     , 'tools' => 'Tools'
     , 'user_metas' => 'User Meta Data'
     , 'plan_metas' => 'Plan Meta Data'
